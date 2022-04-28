@@ -31,7 +31,7 @@ function init() {
 function animate() {
     current = parseFloat(lerp(current, target, ease)).toFixed(2)
     target = window.scrollY
-    setTransform(slider, `translateX(-${current}px)`)
+    setTransform(slider, `translate3D(-${current}px, 0, 0)`)
     animateImages()
     requestAnimationFrame(animate)
 }
